@@ -1,0 +1,62 @@
+version: "3.1"
+
+services:
+  app:
+    build:
+      context: ./app
+    restart: unless-stopped
+    working_dir: /var/www/app
+    environment:
+      - APP_NAME="Logistic"
+      - DB_HOST=db
+      - DB_DATABASE=db
+      - DB_USERNAME=dev
+      - DB_PASSWORD=bpc%VR7d69W@
+      - DEBUGBAR_ENABLED=false
+      - APP_LOCALE=vi
+      - SENTRY_LARAVEL_DSN=https://46eaaefb8e764d4fa257a9044a1f19b6@o1110271.ingest.sentry.io/4504675643293696
+      - SENTRY_TRACES_SAMPLE_RATE=1.0
+    volumes:
+      - ./app:/var/www/app
+    links:
+      - db:db
+    command: sh -c "chmod +x ./start.sh && ./start.sh && php-fpm"
+
+  db:
+    image: mysql:5.7.40
+    command:
+      [
+        --default-authentication-plugin=mysql_native_password,
+        --character-set-server=utf8mb4,
+        --collation-server=utf8mb4_unicode_ci
+      ]
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=bpc%VR7d69W@
+      - MYSQL_USER=dev
+      - MYSQL_PASSWORD=bpc%VR7d69W@
+      - MYSQL_DATABASE=db
+    volumes:
+      - ./db/data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8089:80
+    environment:
+      # - PMA_ARBITRARY=1
+      # - PMA_USER=admin
+      # - PMA_PASSWORD=5R2jkL8F8R81
+      - PMA_HOST=db
+      # - PMA_USER=dev
+      # - MYSQL_PASSWORD=bpc%VR7d69W@
+      - MYSQL_ROOT_PASSWORD=bpc%VR7d69W@
+      - UPLOAD_LIMIT=2G
+    depends_on:
+      - db
+
+networks:
+  default:
+    name: nginx-network
+    external: true

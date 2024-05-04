@@ -1,0 +1,254 @@
+<html>
+    <head></head>
+
+    <body>
+        <canvas id="myChart"></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/2.2.1/chartjs-plugin-annotation.min.js"></script>
+
+        <script>
+            const plugin = {
+                id: "customCanvasBackgroundColor",
+                beforeDraw: (chart, args, options) => {
+                    const { ctx } = chart;
+                    ctx.save();
+                    ctx.globalCompositeOperation = "destination-over";
+                    ctx.fillStyle = options.color || "#fff8ef";
+                    ctx.fillRect(0, 0, chart.width, chart.height);
+                    ctx.restore();
+                },
+            };
+
+            var ctx = document.getElementById("myChart").getContext("2d");
+
+            const img = new Image();
+            img.src =
+                "https://www.chartjs.org/chartjs-plugin-annotation/latest/favicon.png";
+
+            let labels = [
+                "",
+                "Bích Ngọc-20",
+                "Thành Học-28",
+                "Vũ Hùng-02",
+                "Ánh Dương-48",
+                "Phạm Chiến-14",
+                "",
+            ];
+
+            let data = [null, 0, 0, 4800, 3974400, 78795888, null];
+
+            const iconMoney = new Image();
+            iconMoney.src = "icon-money1.svg";
+
+            const config = {
+                backgroundColor: "#fff8ef",
+                type: "line",
+                data: {
+                    labels: [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                        "July",
+                    ],
+                    labels,
+                    datasets: [
+                        {
+                            label: "My First Dataset",
+                            data: [65, 59, 80, 81, 56, 55, 40],
+                            data,
+                            fill: false,
+                            borderColor: "rgb(75, 192, 192)",
+                            // tension: 0.1,
+                            backgroundColor: "#fff8ef",
+                        },
+                    ],
+                },
+                options: {
+                    layout: {
+                        // padding: 20,
+                    },
+
+                    // scales: {
+                    //     // yAxes: [
+                    //     //     {
+                    //     //         ticks: { min: -100, max: 100 },
+                    //     //     },
+                    //     // ],
+                    // },
+
+                    scales: {
+                        // xAxes: [
+                        //     {
+                        //         type: "linear",
+                        //         position: "bottom",
+                        //         display: false,
+                        //         ticks: {
+                        //             min: -1,
+                        //             max: 6,
+                        //             stepSize: 1,
+                        //         },
+                        //     },
+                        // ],
+                        // x: {
+                        //     // or 'xAxes' if you are using an older version of Chart.js
+                        //     type: "linear", // or 'category', 'time', etc., depending on your data
+                        //     min: -1, // set this to the value you want the x-axis to start from
+                        //     // ... other options
+                        //     max: 6,
+                        //     // stepSize: 1,
+                        //     ticks: {
+                        //         stepSize: 1, // set this to your desired step size
+                        //         // ... other options
+                        //     },
+                        // },
+                        // ... other scales if necessary
+                        // y: {
+                        //     // or 'xAxes' if you are using an older version of Chart.js
+                        //     type: "linear", // or 'category', 'time', etc., depending on your data
+                        //     min: -10000000, // set this to the value you want the x-axis to start from
+                        //     // ... other options
+                        //     max: 78795888 * 1.5,
+                        //     ticks: {
+                        //         // stepSize: 2400,
+                        //     },
+                        // },
+                        // xAxes: [{ ticks: { stepSize: 1 } }]
+                    },
+
+                    plugins: {
+                        customCanvasBackgroundColor: {
+                            color: "#fff8ef",
+                        },
+
+                        annotation: {
+                            annotations: {
+                                box1: {
+                                    // Indicates the type of annotation
+                                    type: "box",
+                                    xMin: 0.5,
+                                    xMax: 1.5,
+                                    yMin: 50,
+                                    yMax: 70,
+                                    backgroundColor: "rgba(255, 99, 132, 0.25)",
+                                },
+                                box2: {
+                                    // Indicates the type of annotation
+                                    type: "box",
+                                    xMin: 1.5,
+                                    xMax: 2.5,
+                                    yMin: 50,
+                                    yMax: 70,
+                                    backgroundColor: "rgba(255, 99, 132, 0.25)",
+                                },
+
+                                label1: {
+                                    type: "label",
+
+                                    xMin: 1,
+                                    xMax: 1,
+
+                                    yMin: 10000000,
+                                    yMax: 10000000,
+
+                                    backgroundColor: "rgba(245,245,245)",
+                                    content: [`This is my text`],
+                                    font: {
+                                        size: 18,
+                                    },
+
+                                    position: "end",
+
+                                    textAlign: "center",
+                                },
+
+                                money: {
+                                    type: "label",
+                                    drawTime: "afterDraw",
+
+                                    content: iconMoney,
+
+                                    width: 18,
+                                    height: 18,
+
+                                    xMin: 1,
+                                    xMax: 1,
+
+                                    yMin: 10000000,
+                                    yMax: 10000000,
+
+                                    padding: 6,
+                                    yAdjust: -18,
+                                    xAdjust: +18,
+
+                                    position: "center",
+                                },
+
+                                // image: {
+                                //     type: "label",
+                                //     drawTime: "afterDraw",
+
+                                //     content: img,
+
+                                //     width: 100,
+                                //     height: 100,
+
+                                //     xMin: 1.5,
+                                //     xMax: 2.5,
+
+                                //     xMin: 0,
+                                //     xMax: 0,
+
+                                //     yMin: 50,
+                                //     yMax: 70,
+                                //     // borderWidth: 1,
+                                //     // borderDash: [6, 6],
+                                //     // callout: {
+                                //     //     display: true,
+                                //     //     position: "left",
+                                //     // },
+                                // },
+                            },
+
+                            // annotations: [
+                            //     {
+                            //         type: "label",
+                            //         drawTime: "afterDraw",
+
+                            //         content: img,
+
+                            //         width: 50,
+                            //         height: 50,
+
+                            //         xMin: 0.05,
+                            //         xMax: 0.05,
+                            //         xMin: 1,
+                            //         xMax: 1,
+
+                            //         yMin: 78795888,
+                            //         yMax: 78795888,
+
+                            //         yMin: 0 + 10000000,
+                            //         yMax: 0 + 10000000,
+                            //         // borderWidth: 1,
+                            //         // borderDash: [6, 6],
+                            //         // callout: {
+                            //         //     display: true,
+                            //         //     position: "left",
+                            //         // },
+                            //     },
+                            // ],
+                        },
+                    },
+                },
+
+                plugins: [plugin],
+            };
+
+            var myChart = new Chart(ctx, config);
+        </script>
+    </body>
+</html>

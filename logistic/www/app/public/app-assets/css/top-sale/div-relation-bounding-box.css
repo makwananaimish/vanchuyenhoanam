@@ -1,0 +1,263 @@
+.danh-sch-khch {
+  flex: 1;
+  position: relative;
+  line-height: 140%;
+  text-shadow: 0 0 22.19px rgba(255, 212, 102, 0.75);
+}
+.component-1 {
+  flex: 1;
+  background-color: var(--scifi);
+  border: 2.2px solid var(--scifi);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.83rem 1.66rem;
+  z-index: 0;
+}
+.icon-close {
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 20px);
+  left: 67.56rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.component-1-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: 1.11rem;
+}
+.div-name,
+.relation {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.relation {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  font-weight: 800;
+}
+.div-name {
+  width: 26.81rem;
+  flex-direction: row;
+  justify-content: center;
+}
+.relation1 {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  font-weight: 800;
+}
+.div-sale {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 15rem;
+  max-width: 16rem;
+}
+.relation2 {
+  position: relative;
+  line-height: 160%;
+  font-weight: 800;
+  width: 9rem;
+  flex-shrink: 0;
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.div-sale1,
+.relation2,
+.relation3 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.div-sale1 {
+  flex-direction: row;
+  justify-content: center;
+}
+.relation3 {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  font-weight: 800;
+  min-width: 9rem;
+  max-width: 9rem;
+}
+.div-header,
+.div-sale2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.div-sale2 {
+  width: 11.25rem;
+  align-items: center;
+}
+.div-header {
+  background-color: var(--scifi-sub);
+  border-top: 2px solid var(--scifi);
+  border-right: 2px solid var(--scifi);
+  border-left: 2px solid var(--scifi);
+  box-sizing: border-box;
+  height: 4.5rem;
+  align-items: flex-start;
+  padding: var(--padding-xs) var(--padding-5xl);
+  gap: var(--gap-xs);
+}
+.relation4 {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  font-weight: 500;
+}
+.div-name1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.relation5 {
+  position: relative;
+  line-height: 160%;
+  font-weight: 500;
+  display: inline-block;
+  width: 15rem;
+  flex-shrink: 0;
+}
+.div-sale3,
+.div-sale4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--font-size-2xl);
+}
+.div-sale4 {
+  width: 9rem;
+  font-size: var(--font-size-11xl);
+  color: var(--color-palegreen);
+}
+.relation7 {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+  font-weight: 900;
+}
+.div-sale5 {
+  width: 9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* text-align: right; */
+  font-size: var(--font-size-3xl);
+}
+.icon-money {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+.div-oneitem2 {
+  align-self: stretch;
+  height: 3rem;
+  align-items: center;
+  padding: var(--padding-7xs) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-5xl);
+}
+.div-name4,
+.div-oneitem2,
+.div-sale7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.div-sale7 {
+  width: 9rem;
+  align-items: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-crimson);
+}
+.div-name4 {
+  flex: 1;
+  align-items: flex-start;
+  font-size: var(--font-size-5xl);
+}
+.div-oneitem23,
+.div-sale12,
+.div-sale14 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div-sale14 {
+  width: 9rem;
+  text-align: right;
+}
+.div-oneitem23 {
+  align-self: stretch;
+  height: 3rem;
+  padding: var(--padding-7xs) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+}
+.relation20 {
+  flex: 1;
+  position: relative;
+  line-height: 160%;
+}
+.div-listwrap {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--color-aqua);
+  border: 2px solid var(--scifi);
+  overflow-y: auto;
+  font-size: var(--font-size-2xl);
+}
+.div-header-parent,
+.div-listwrap,
+.div-relationboundingbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div-header-parent {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--dark);
+  padding: var(--padding-5xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--scifi);
+  font-family: var(--font-inter);
+}
+.div-relationboundingbox {
+  position: relative;
+  box-shadow: 0 0 40px rgba(255, 212, 102, 0.75);
+  border: 3px solid var(--scifi);
+  box-sizing: border-box;
+  width: 100%;
+  height: 53.88rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--dark);
+  font-family: var(--font-be-vietnam);
+}

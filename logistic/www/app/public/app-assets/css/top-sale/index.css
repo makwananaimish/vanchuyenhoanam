@@ -1,0 +1,385 @@
+.frame-child {
+    position: relative;
+    width: 16rem;
+    height: 67.5rem;
+    object-fit: cover;
+}
+.div,
+.home {
+    position: relative;
+    line-height: 140%;
+    font-weight: 500;
+}
+.div {
+    color: #fff;
+}
+.div-title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+}
+.div1,
+.top-doanh-thu1 {
+    position: relative;
+    line-height: 140%;
+    text-shadow: 0 0 30px rgba(255, 212, 102, 0.75);
+}
+.div1 {
+    line-height: 120%;
+    font-weight: 800;
+}
+.calendar-icon-2-1 {
+    position: relative;
+    width: 2.25rem;
+    height: 2.33rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.div-title1,
+.div-title2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div-title2 {
+    align-self: stretch;
+    background-color: var(--scifi-bg);
+    box-shadow: 0 0 30px rgba(255, 212, 102, 0.75);
+    border: 3px solid var(--scifi);
+    overflow: hidden;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-lg);
+    gap: var(--gap-xs);
+    font-size: var(--font-size-5xl);
+}
+.div-title1 {
+    justify-content: flex-start;
+    gap: 3rem;
+    font-size: 3rem;
+}
+.top-hunter-bonus {
+    flex: 1;
+    position: relative;
+    line-height: 140%;
+    text-shadow: 0 0 22.19px rgba(255, 212, 102, 0.75);
+}
+.component-12 {
+    flex: 1;
+    background-color: var(--scifi);
+    border: 2.2px solid var(--scifi);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.83rem 1.66rem;
+}
+.component-1-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.div-stt,
+.relation60 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+.relation60 {
+    position: relative;
+    line-height: 160%;
+    font-weight: 800;
+    width: 6rem;
+    flex-shrink: 0;
+}
+.div-stt {
+    flex-direction: row;
+    justify-content: center;
+}
+.relation61 {
+    flex: 1;
+    position: relative;
+    line-height: 160%;
+    font-weight: 800;
+}
+.div-name15,
+.relation61,
+.relation62 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+.div-name15 {
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+.relation62 {
+    position: relative;
+    line-height: 160%;
+    font-weight: 800;
+    width: 9rem;
+    flex-shrink: 0;
+    min-width: 9rem;
+    max-width: 9rem;
+}
+.div-header1,
+.div-sale45 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+}
+.div-sale45 {
+    width: 12.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.div-header1 {
+    background-color: var(--scifi-sub);
+    border-top: 3px solid var(--scifi);
+    border-right: 3px solid var(--scifi);
+    border-left: 3px solid var(--scifi);
+    box-sizing: border-box;
+    height: 4.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-xs) var(--padding-5xl);
+    gap: var(--gap-xs);
+}
+.div-stt-icon {
+    flex: 1;
+    max-height: 100%;
+    width: 2.44rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+.div-stt-wrapper {
+    align-self: stretch;
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-7xs);
+    box-sizing: border-box;
+}
+.relation63 {
+    flex: 1;
+    position: relative;
+    line-height: 160%;
+    font-weight: 500;
+}
+
+.relation63 a {
+    color: var(--scifi);
+}
+
+.div-name16 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.relation64 {
+    position: relative;
+    line-height: 160%;
+    font-weight: 900;
+}
+.div-sale46 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: var(--font-size-3xl);
+}
+.icon-money14 {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+.div-oneitem {
+    align-self: stretch;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-7xs) var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-xs);
+    font-size: var(--font-size-5xl);
+}
+
+.div-oneitem:hover {
+    background-color: var(--scifi-sub);
+}
+
+.div-stt-icon1 {
+    flex: 1;
+    max-height: 100%;
+    width: 2.44rem;
+    object-fit: cover;
+}
+.relation69 {
+    align-self: stretch;
+    position: relative;
+    line-height: 160%;
+    font-weight: 500;
+}
+.div-name19,
+.relation-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.relation-wrapper {
+    align-self: stretch;
+    width: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--padding-lg);
+    box-sizing: border-box;
+}
+.div-name19 {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: var(--font-size-5xl);
+}
+.relation71 {
+    position: relative;
+    line-height: 160%;
+    font-weight: 500;
+}
+.div-oneitem4,
+.div-sale49 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.div-oneitem4 {
+    align-self: stretch;
+    height: 3rem;
+    padding: var(--padding-7xs) var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-xs);
+}
+.relation73 {
+    flex: 1;
+    position: relative;
+    line-height: 160%;
+}
+.div-listwrap1 {
+    align-self: stretch;
+    flex: 1;
+    background-color: var(--color-aqua);
+    border: 1.5px solid var(--scifi);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--font-size-2xl);
+}
+.div-header-group {
+    background-color: var(--scifi-bg);
+    flex-direction: column;
+    padding: var(--padding-5xl);
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--scifi);
+    font-family: var(--font-inter);
+}
+.div-header-group,
+.div-latestaccess,
+.div-relationboundingbox1 {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.div-relationboundingbox1 {
+    border: 3px solid var(--scifi);
+    overflow-y: auto;
+    flex-direction: column;
+}
+.div-latestaccess {
+    border-radius: var(--br-5xs);
+    box-shadow: 0 0 20px rgba(255, 212, 102, 0.75);
+    flex-direction: row;
+    gap: var(--gap-base);
+    text-align: center;
+    font-size: var(--font-size-13xl);
+    color: var(--dark);
+    font-family: var(--font-be-vietnam);
+}
+.copyright-2023-logistic {
+    flex: 1;
+    position: relative;
+    line-height: 120%;
+}
+.version-31 {
+    position: relative;
+    line-height: 120%;
+    color: inherit;
+    text-align: right;
+    text-decoration: none;
+}
+.component-11,
+.div-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+}
+.div-footer {
+    align-self: stretch;
+    flex-direction: row;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-be-vietnam-pro);
+}
+.component-11 {
+    flex: 1;
+    height: 67.5rem;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    box-sizing: border-box;
+}
+.frame-group,
+.frame-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.frame-group {
+    flex: 1;
+    justify-content: space-between;
+}
+.frame-parent {
+    position: relative;
+    border-radius: var(--br-5xs);
+    width: 100%;
+    justify-content: flex-start;
+    background-image: url("./public/frame-1707478094@3x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: var(--font-size-base);
+    color: var(--scifi);
+    font-family: var(--font-inter);
+}
+
+.component-11 {
+    background-image: url("./public/frame-1707478094@3x.png");
+}
+
+.top-doanh-thu1 {
+    color: var(--scifi);
+}

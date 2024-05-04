@@ -1,0 +1,8 @@
+backup/vanchuyenhoanam.com
+# wordpress
+# wordpress/*
+# wordpressdb
+# wordpressdb/*
+wordpressdb3/*
+wpdb/*
+!wpdb/.keep

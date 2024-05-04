@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  /* --font-inter: Inter;
+  --font-be-vietnam: "Be Vietnam";
+  --font-be-vietnam-pro: "Be Vietnam Pro"; */
+
+  /* font sizes */
+  --font-size-2xl: 1.31rem;
+  --font-size-11xl: 1.88rem;
+  --font-size-5xl: 1.5rem;
+  --font-size-3xl: 1.38rem;
+  --font-size-13xl: 2rem;
+  --font-size-sm: 0.88rem;
+  --font-size-base: 1rem;
+
+  /* Colors */
+  --scifi: #ffe5a0;
+  --scifi-bg: rgba(255, 229, 160, 0.15);
+  --scifi-sub: rgba(255, 229, 160, 0.6);
+  --dark: #1e1e1e;
+  --color-aqua: rgba(72, 244, 255, 0.1);
+  --color-crimson: #ff003d;
+  --color-palegreen: #a0ffaa;
+
+  /* Gaps */
+  --gap-xs: 0.75rem;
+  --gap-base: 1rem;
+
+  /* Paddings */
+  --padding-5xl: 1.5rem;
+  --padding-7xs: 0.38rem;
+  --padding-xs: 0.75rem;
+  --padding-sm-3: 0.83rem;
+  --padding-7xl-6: 1.66rem;
+  --padding-lg: 1.13rem;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+}
